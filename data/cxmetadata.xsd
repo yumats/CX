@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.cinegrid.org/metadata"
+           targetNameSpace="http://www.cinegrid.org/metadata">
+
+<xs:element name="metadata">
+  <xs:complexType>
+    <xs:sequence>
+
+      <xs:element name="category">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Animation"/>
+            <xs:enumeration value="Audio"/>
+            <xs:enumeration value="LiveAction"/>
+            <xs:enumeration value="StillImages"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      
+      <xs:element name="subject">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Art"/>
+            <xs:enumeration value="Entertainment"/>
+            <xs:enumeration value="Scientific"/>
+            <xs:enumeration value="Sports"/>
+            <xs:enumeration value="StopMotion"/>
+            <xs:enumeration value="Tests"/>
+            <xs:enumeration value="Other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      
+      <xs:element name="year" type="xs:gYear" />
+      
+      <xs:element name="keyname" type="xs:string" />
+      
+      <xs:element name="title" type="xs:string" />
+      
+      <xs:element name="subordinatetitle" type="xs:string" minOccurs="0" maxOccurs="1" />
+
+      <xs:element name="stereo" tyep="xs:boolean" />
+
+      <xs:element name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Audio"/>
+            <xs:enumeration value="Metadata"/>
+            <xs:enumeration value="Movie"/>
+            <xs:enumeration value="Proxy"/>
+            <xs:enumeration value="Stills"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="format" type="xs:string" />
+      
+      <xs:element name="curator" type="xs:string" />
+
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

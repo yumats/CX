@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<metadata xmlns="http://www.cinegrid.org/metadata"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.cinegrid.org/metadata cxmetadata.xsd">
+-->
+
+<metadata>
+  <category>Live Action</category>
+  <subject>Tests</subject>
+  <year>2012</year>
+  <keyname>Calit2</keyname>
+  <title>Test Movie</title>
+  <subordinatetitle>Subordinate</subordinatetitle>
+  <stereo>true</stereo>
+  <type>Movie</type>
+  <format>tiff</format>
+  <curator></curator>
+</metadata>
